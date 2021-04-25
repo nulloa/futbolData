@@ -1,4 +1,5 @@
 # futbol
+<<<<<<< HEAD
 This repository will host data and files to analyze. Possibly a blog too?
 
 
@@ -39,3 +40,12 @@ AR = Away Team Red Cards
 HBP = Home Team Bookings Points (10 = yellow, 25 = red)
 ABP = Away Team Bookings Points (10 = yellow, 25 = red)
 ```
+=======
+A package to grab soccer data and code to analyze it. Possibly a blog too?
+
+
+# Data sources
+https://github.com/jalapic/engsoccerdata
+
+https://github.com/openfootball/europe-champions-league
+>>>>>>> b97cc9a723c844d4b2d0f5354b7b64ae8d8094ed
