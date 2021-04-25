@@ -2,7 +2,9 @@ library(readr)
 library(dplyr)
 
 # Setup locations of csv files
-files = c("http://www.football-data.co.uk/mmz4281/1718/SP1.csv",
+files = c("http://www.football-data.co.uk/mmz4281/1920/SP1.csv",
+          "http://www.football-data.co.uk/mmz4281/1819/SP1.csv",
+          "http://www.football-data.co.uk/mmz4281/1718/SP1.csv",
           "http://www.football-data.co.uk/mmz4281/1617/SP1.csv",
           "http://www.football-data.co.uk/mmz4281/1516/SP1.csv",
           "http://www.football-data.co.uk/mmz4281/1415/SP1.csv",
