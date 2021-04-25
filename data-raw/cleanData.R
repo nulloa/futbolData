@@ -20,4 +20,4 @@ laliga = data.frame(tmp["Season"],
                     Yellow     = tmp$HY - tmp$AY,
                     Red        = tmp$HR - tmp$AR)
 
-save(laliga, file="laliga.rda")
+save(laliga, file="../Data/laliga.rda")
