@@ -7,7 +7,8 @@ tmp$Season  = paste0("20", substr(tmp$fSeason, start = 1, stop = 2))
 
 
 # Create differences: Home - Away
-laliga = data.frame(tmp[1:4],
+laliga = data.frame(tmp["Season"],
+                    tmp[1:4],
                     FinalScore = tmp$FTHG - tmp$FTAG,
                     FinalRes   = tmp$FTR,
                     HalfScore  = tmp$HTHG - tmp$HTAG,
