@@ -1,7 +1,7 @@
-Package: futbol
-Title: Host data from La Liga and functions to analyze
+Package: futbolData
+Title: Host data from La Liga
 Version: 0.0.0.9000
-Authors@R: person("Nehemias", "Ulloa", email = "nulloa1@iastate.edu", role = c("aut", "cre"))
+Authors@R: person("Nehemias", "Ulloa", email = "nehemiasulloa@gmail.com", role = c("aut", "cre"))
 Description: Host data from La Liga and functions to analyze the data.
 Depends: R (>= 3.3.2)
 License: GPL-2
