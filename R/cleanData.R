@@ -2,7 +2,7 @@
 here::here()
 
 # Read in raw data
-tmp <- read.csv("laliga.csv")
+tmp <- read.csv("../data-raw/laliga.csv")
 
 # Remove columns associated with betting
 tmp <- data.frame(fSeason=tmp$Season, tmp[c(2:23)])
@@ -23,4 +23,4 @@ laliga = data.frame(tmp["Season"],
                     Yellow     = tmp$HY - tmp$AY,
                     Red        = tmp$HR - tmp$AR)
 
-save(laliga, file="../Data/laliga.rda")
+save(laliga, file="../data/laliga.rda")
