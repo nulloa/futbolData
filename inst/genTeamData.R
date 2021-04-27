@@ -9,9 +9,10 @@ tmp$fSeason[nchar(tmp$fSeason)==3] <- paste0("0", tmp$fSeason[nchar(tmp$fSeason)
 tmp$Season  = paste0("20", substr(tmp$fSeason, start = 1, stop = 2))
 
 homeSub <- tmp %>%
-  select(Season, fSeason, HomeTeam, FTHG, HS, HST, HC, HF, HY, HR) %>%
+  select(Season, fSeason, HomeTeam, FTHG, FTAG, HS, HST, HC, HF, HY, HR) %>%
   rename(Team = HomeTeam,
-         Goals = FTHG, 
+         Goals = FTHG,
+         GoalsAgainst = FTAG,
          Shots = HS, 
          TargetShots = HST, 
          Corners = HC, 
@@ -20,9 +21,10 @@ homeSub <- tmp %>%
          Reds = HR)
 
 awaySub <- tmp %>%
-  select(Season, fSeason, AwayTeam, FTAG, AS, AST, AC, AF, AY, AR) %>%
+  select(Season, fSeason, AwayTeam, FTAG, FTHG, AS, AST, AC, AF, AY, AR) %>%
   rename(Team = AwayTeam,
          Goals = FTAG, 
+         GoalsAgainst = FTHG, 
          Shots = AS, 
          TargetShots = AST, 
          Corners = AC, 
