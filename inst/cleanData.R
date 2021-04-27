@@ -2,7 +2,7 @@
 here::here()
 
 # Read in raw data
-tmp <- read.csv("../data-raw/laliga.csv")
+tmp <- read.csv("extdata/laliga.csv")
 
 # Remove columns associated with betting
 tmp <- data.frame(fSeason=tmp$Season, tmp[c(2:23)])
