@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # Read in raw data
-tmp <- read.csv("../data-raw/laliga.csv")
+tmp <- read.csv("extdata/laliga.csv")
 
 # Remove columns associated with betting
 tmp <- data.frame(fSeason=tmp$Season, tmp[c(2:23)])
@@ -30,8 +30,8 @@ awaySub <- tmp %>%
          Yellows = AY, 
          Reds = AR)
 
-jointRes <- homeSub %>%
+laliga_team <- homeSub %>%
   rbind(., awaySub)
 
-save(jointRes, file="../data/laliga_team.rda")
+save(laliga_team, file="../data/laliga_team.rda")
 
