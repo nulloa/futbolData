@@ -2,7 +2,7 @@
 This repository will host data and files to analyze. Possibly a blog too?
 
 
-The data comes from [Football-Data](http://www.football-data.co.uk/spainm.php).
+The data comes from [Football-Data](https://www.football-data.co.uk/spainm.php).
 
 ```
 Div = League Division
