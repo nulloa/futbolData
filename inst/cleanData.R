@@ -6,7 +6,9 @@ tmp <- read.csv("extdata/laliga.csv")
 
 # Remove columns associated with betting
 tmp <- data.frame(fSeason=tmp$Season, tmp[c(2:23)])
+# Add 0 if year is < 2010
 tmp$fSeason[nchar(tmp$fSeason)==3] <- paste0("0", tmp$fSeason[nchar(tmp$fSeason)==3])
+# Create Season from first year of fSeason
 tmp$Season  = paste0("20", substr(tmp$fSeason, start = 1, stop = 2))
 
 # Create differences: Home - Away
